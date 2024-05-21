@@ -1,19 +1,77 @@
+
 <html>
-
 <head>
-	<title>Melody</title>
-	<b>MELODY</b>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Melody</title>
+  <style>
+	body {background-color: #d3d3d3; }
+    .italic { font-style: italic; }
+    .bold { font-weight: bold; }
+    .large-font { font-size: 1.5em; }
+    .red-link { color: red; }
+    .blue-link { color: blue; }
+  </style>
 </head>
+<body>
 
-<frameset rows="20%,80%" frameborder="0" framespacing="0">
+  <h1>Melody - Your One-Stop Music Shop</h1>
 
-<frame src="title.htm" scrolling="no"/>
+  <p>Welcome to Melody, your one-stop shop for all your musical needs! We offer a wide variety of instruments, music sheets, and accessories for musicians of all levels. 
+    Whether you're a seasoned professional or just starting out, we have something for you. 
+    <a href="#instruments" class="blue-link">Click here</a> to explore our instrument selection, or visit our <a href="accessories.html" class="red-link">accessories page</a> to find the perfect picks and tuners.</p>
 
-<frameset cols="20%,80%" frameborder="0" framespacing="0">
-	<frame src="menu.htm"/>
-	<frame src="home.htm" name="content"/>
-	</frameset>
-	
-</frameset>
+  <h2 id="instruments">Instruments</h2>
+
+  <p>We carry a wide range of instruments, including:</p>
+  <ul>
+    <li><span class="italic">Guitars:</span> Acoustic, electric, classical, and more! <br> 
+      <img src="images/guitar.jpg" alt="Guitar" width="200" height="150"> (<a href="guitars.html" target="_blank" class="red-link">See all guitars</a>)</li>
+    <li><span class="italic">Pianos:</span> Upright and grand pianos for every budget. </li>
+    <li><span class="italic">Drums: </span>Complete drum sets and individual percussion instruments.</li>
+  </ul>
+  <p> We also sell these instruments: </p>
+  <ol>
+	<li>Trumpet</li>
+	<li>Flute</li>
+  </ol>
+  <dl> 
+    <li>Violin</li>
+	<li>Keyboard</li>
+  </dl>
+  <iframe
+    src = "https://www.yamaha.com/en/"
+	name = "framename" frameborder = "0" scrolling = "no"> 
+  </Iframe>
+  <h2>Featured Products</h2>
+  <table>
+    <thead>
+      <tr style="background-color: #a7a7a7;">
+        <th>Image</th>
+        <th>Product</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="images/microphone.jpg" alt="Microphone" width="100" height="100"></td>
+        <td><a href="https://rozetka.com.ua/ua/esperanza_eh182/p125225719/?gad_source=1&gclid=Cj0KCQjwxqayBhDFARIsAANWRnS5Muzx-GH_OukDCmHA_nWoRqT5DHObGh5L8l99UTShU6a_eRLai14aAha1EALw_wcB">Studio Microphone</a></td>
+        <td>$199.99</td>
+      </tr>
+      <tr>
+        <td><img src="images/headphones.jpg" alt="Headphones" width="80" height="80"></td>
+        <td><a href="#">Noise-Cancelling Headphones</a></td>
+        <td>$129.99</td>
+      </tr>
+      <tr>
+        <td><img src="images/sheet_music.jpg" alt="Sheet Music" width="120" height="150"></td>
+        <td><a href="#">Learn to Play Guitar! (Sheet Music)</a></td>
+        <td>$14.99</td>
+      </tr>
+      </tbody>
+  </table>
+
+
+</body>
 </html>
-</html>
+
