@@ -22,7 +22,7 @@ h1, h2 {
 }
 
 
-a {
+a:link {
     color: #0066cc;
     text-decoration: none;
     font-weight: bold;
@@ -30,10 +30,17 @@ a {
 
 
 a:hover {
+    text-decoration: underline;
+}
+
+a:active{
     color: red;
     text-decoration: underline;
 }
 
+a:visited{
+    color: rgb(0, 226, 30);
+} 
 
 ul, ol {
     margin: 20px;
@@ -47,7 +54,9 @@ ul li {
     padding: 5px;
     margin: 5px 0;
 }
-
+ul > li:first-child{
+    background-color: rgb(255, 203, 196);
+}
 
 ol li {
     background: #ddd;
@@ -66,6 +75,12 @@ dl > li{
     font-weight: 700;
 }
 
+#instruments + p{
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    font-weight: 700;
+}
 
 table {
     width: 100%;
@@ -136,4 +151,19 @@ footer{
 .sponsors {
     margin: 20px;
     width: 200px;
+}
+.italic{
+    position: static;
+}
+.frameee{
+   float: inline-end;
+}
+.sponsor::before{
+    content: "Name: ";
+    font-weight: 700;
+}
+
+
+.important-text::after{
+    content: " \260E";
 }
